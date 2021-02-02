@@ -1,0 +1,39 @@
+@import "vars"
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Montserrat', sans-serif
+  font-size: 14px
+
+.container
+  max-width: 1166px
+  margin: 0 auto
+  padding: 0 15px
+
+a
+  text-decoration: none
+  color: $textColor
+  @include boldFont
+  transition: all 0.4s ease
+  &:hover
+    color: $accentColor
+
+.button a
+  width: 205px
+  height: 45px
+  background-color: $accentColor
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 18px
+  @include boldFont
+  color: $whiteColor
+  border-radius: 23px
+  box-shadow: 0 3px 6px 0 $borderColor
+
+.accent-text
+  color: $accentColor
+  @include boldFont
