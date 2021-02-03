@@ -1,17 +1,33 @@
 @import "vars"
+
 *
   box-sizing: border-box
   margin: 0
   padding: 0
 
+ul
+  list-style: none
+
 body
   font-family: 'Montserrat', sans-serif
   font-size: 14px
+  min-width: 320px
+
+.d-flex
+  display: flex
+
+.flex-center-between
+  display: flex
+  align-items: center
+  justify-content: space-between
 
 .container
   max-width: 1166px
   margin: 0 auto
   padding: 0 15px
+
+i
+  font-size: 18px
 
 a
   text-decoration: none
@@ -37,3 +53,25 @@ a
 .accent-text
   color: $accentColor
   @include boldFont
+
+.burger-button
+  display: none
+  transition: all 0.3s ease
+  .line
+    width: 25px
+    height: 1px
+    background-color: $textColor
+    margin-top: 5px
+    &:first-child
+      margin-top: 0
+
+.active-burger
+  transform: rotate(90deg)
+
+.active-responsive-navigation
+  display: block !important
+
+
+@media only screen and (min-width: 560px)
+  .active-responsive-navigation
+    display: none !important

@@ -11,16 +11,84 @@
 </head>
 <body>
 
-   <h1 class="container">Start <span class="accent-text">template</span></h1>
-   <p>Hello world</p>
-   <ul>
-       <li>Hello 1</li>
-       <li>Hello 2</li>
-       <li>Hello 3</li>
-   </ul>
-   <a href="#">Link</a>
-
-   <div class="button"><a href="#">Button</a></div>
+   <!-- .header -->
+   <header class="header">
+   
+       <!-- .header-contacts-row -->
+       <div class="header-contacts-row flex-center-between container">
+   
+           <!-- .header-contacts -->
+           <div class="header-contacts d-flex">
+               <div class="phone"><i class="fas fa-mobile-alt"></i> <span class="responsive">Телефон:</span> <a href="tel:+74952982617">+7 (495) 298-26-17</a> </div>
+               <div class="location"><i class="fas fa-map-marked-alt"></i> <span class="responsive">Адрес:</span> г. Москва ул. Пречистенка 54</div>
+           </div>
+           <!-- /.header-contacts -->
+   
+           <!-- .social-links -->
+           <ul class="social-links d-flex">
+               <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+           </ul>
+           <!-- /.social-links -->
+   
+       </div>
+       <!-- /.header-contacts-row -->
+   
+       <!-- .header-navigation-row-->
+       <div class="header-navigation-row">
+   
+           <!-- .header-navigation-row-content -->
+           <div class="container flex-center-between">
+   
+               <!-- .logo-->
+               <div class="logo"><a href="#"><img src="img/logo.png" alt="NewPizza"></a></div>
+               <!-- /.logo-->
+   
+               <!-- .burger-button-->
+               <div class="burger-button" id="burger-button">
+                   <div class="line"></div>
+                   <div class="line"></div>
+                   <div class="line"></div>
+               </div>
+               <!-- /.burger-button-->
+   
+               <!-- nav -->
+               <nav>
+                   <ul class="d-flex">
+                       <li><a href="#">Главная</a></li>
+                       <li><a href="#">О пиццерии</a></li>
+                       <li><a href="#">Меню</a></li>
+                       <li><a href="#">Галерея</a></li>
+                       <li><a href="#">Контакты</a></li>
+                   </ul>
+               </nav>
+               <!-- /nav -->
+   
+               <!-- .header-button-->
+               <div class="button"><a href="#">Заказать</a></div>
+               <!-- /.header-button-->
+   
+           </div>
+           <!-- /.header-navigation-row-content -->
+   
+           <!-- .responsive-navbar-->
+           <div class="responsive-navbar" id="responsive-navbar">
+               <ul>
+                   <li class="link"><a href="#">Главная</a></li>
+                   <li class="link"><a href="#">О пиццерии</a></li>
+                   <li class="link"><a href="#">Меню</a></li>
+                   <li class="link"><a href="#">Галерея</a></li>
+                   <li class="link"><a href="#">Контакты</a></li>
+               </ul>
+           </div>
+           <!-- /.responsive-navbar-->
+   
+       </div>
+       <!-- /.header-navigation-row-->
+   
+   </header>
+   <!-- /.header -->
 
     <script src="js/scripts.min.js"></script>
 </body>

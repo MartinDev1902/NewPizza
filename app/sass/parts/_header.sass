@@ -1,0 +1,73 @@
+@import '../vars'
+
+.header-contacts-row
+  padding-top: 15px
+  padding-bottom: 15px
+  .header-contacts
+    @include boldFont
+    i
+      margin-right: 10px
+    .phone
+      margin-right: 30px
+  .social-links
+    li + li
+      margin-left: 30px
+
+.header-navigation-row
+  border-top: 1px solid $borderColor
+  padding-top: 20px
+  nav ul
+    li + li
+      margin-left: 40px
+
+.responsive-navbar
+  position: absolute
+  width: 100%
+  z-index: 999
+  background-color: $whiteColor
+  padding: 15px
+  display: none
+  transition: all 0.4s ease
+  ul
+    li + li
+      margin-top: 15px
+
+@media only screen and (max-width : 992px)
+  .header-navigation-row .button
+    display: none
+
+@media only screen and (max-width : 768px)
+  .header-contacts-row .header-contacts
+    flex-direction: column
+    .phone
+      margin-bottom: 10px
+  .header-navigation-row
+    .logo img
+      width: 140px
+    nav > ul
+      li + li
+        margin-left: 15px
+        a
+          font-size: 12px
+
+@media only screen and (max-width : 560px)
+  .header-navigation-row
+    nav
+      display: none
+    .burger-button
+      display: block
+
+@media only screen and (max-width : 480px)
+  .header-contacts-row, i
+    font-size: 14px
+    .phone a, .location
+      font-size: 12px
+    .social-links > li + li
+      margin-left: 15px
+
+@media only screen and (max-width : 375px)
+  .header-contacts-row
+    .phone a, .location, .phone
+      font-size: 10px
+      i
+        display: none
