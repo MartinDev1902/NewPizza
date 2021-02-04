@@ -1,0 +1,37 @@
+@import "../vars"
+
+.about-us-section
+  margin-top: 40px
+  .about-us-image
+    margin-right: 20px
+    width: 519px
+    height: 507px
+    border-radius: 50%
+  .about-us-info
+    max-width: 537px
+    h2
+      margin: 20px 0
+    .order-text
+      @include boldFont
+      font-size: 18px
+      margin: 30px 0
+
+@media only screen and (max-width : 1200px)
+  .about-us-section
+    .about-us-image
+      width: 450px
+      height: 450px
+    .about-us-info
+      max-width: calc(100% - 470px)
+
+@media only screen and (max-width : 992px)
+  .about-us-section .about-us-image
+    width: 350px
+    height: 350px
+
+@media only screen and (max-width : 900px)
+  .about-us-section
+    .about-us-image
+      display: none
+    .about-us-info
+      max-width: 100%
