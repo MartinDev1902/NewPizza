@@ -7,4 +7,5 @@ document.addEventListener('DOMContentLoaded', function () {
       burgerButton.classList.toggle('active-burger');
       navbar.classList.toggle('active-responsive-navigation');
    }
+
 });
