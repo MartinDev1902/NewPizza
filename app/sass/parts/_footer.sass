@@ -1,0 +1,47 @@
+.footer
+  margin-top: 70px
+  .footer-contacts-row
+    .map
+      width: 585px
+      height: 340px
+      margin-right: 100px
+    .contacts
+      p
+        margin: 20px 0
+      .contacts-phone, .contacts-location
+        margin-top: 20px
+        @include boldFont
+        i
+          margin-right: 10px
+    .contacts-social-links
+      margin-top: 20px
+      li
+        display: inline-block
+        margin-right: 30px
+        &:last-child
+          margin-right: 0
+
+.footer-copyright-row
+  padding: 25px 0
+  @include boldFont
+  color: rgba(23, 23, 23, 0.5)
+  text-align: center
+  i
+    margin-right: 10px
+
+@media only screen and (max-width : 1200px)
+  .footer .footer-contacts-row .map
+    margin-right: 50px
+
+@media only screen and (max-width : 992px)
+  .footer .footer-contacts-row .map
+    width: 400px
+
+@media only screen and (max-width : 768px)
+  .footer .footer-contacts-row
+    flex-direction: column
+    .map
+      margin-right: 0
+      width: 100%
+    .contacts
+      margin-top: 20px
