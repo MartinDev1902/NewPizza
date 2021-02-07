@@ -1,0 +1,24 @@
+@import '../vars'
+
+.menu-section
+  margin-top: 75px
+  text-align: center
+  .menu-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    .menu-list-item
+      margin-top: 40px
+      width: 315px
+      text-align: center
+      .item-image
+        width: 250px
+        height: 250px
+        margin-bottom: 20px
+      p
+        margin: 20px 0 30px
+      .item-price
+        @include boldFont
+        font-size: 25px
+  .menu-button a
+    margin: 60px auto 0
